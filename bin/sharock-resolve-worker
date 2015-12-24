@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -e
+
+if [ $# -lt 1 ]; then
+    echo "Invalid arguments length" >&2
+    exit 1
+fi
+
+package_id=$1
+
+echo "Resolve: run $package_id"
+echo "This is a dummy script"
