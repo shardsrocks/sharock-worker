@@ -6,6 +6,7 @@ Background worker for Sharock.
 
 - Go v1.5
 - [gom](https://github.com/mattn/gom)
+- [goworker](https://github.com/benmanns/goworker)
 - Redis
 
 ## Build
