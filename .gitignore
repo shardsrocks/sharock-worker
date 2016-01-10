@@ -1,3 +1,5 @@
 _vendor
+/bin/sharock-resolve-worker
 
 /sharock-worker
+/worker
