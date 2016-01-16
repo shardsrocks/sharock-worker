@@ -10,6 +10,8 @@ func init() {
 }
 
 func main() {
+	path := getResolverPath()
+	fmt.Println("Resolver Path:", path)
 	if err := goworker.Work(); err != nil {
 		fmt.Println("Error:", err)
 	}
