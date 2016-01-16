@@ -31,6 +31,7 @@ func resolve(queue string, args ...interface{}) error {
 	fmt.Printf("Resolve: begin %s\n", packageIdStr)
 
 	cmd := exec.Command("bin/sharock-resolve-worker", packageIdStr)
+	cmd.Env = os.Environ()
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
 
