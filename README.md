@@ -1,4 +1,5 @@
-# Sharock worker
+# Sharock Worker
+[![Circle CI](https://img.shields.io/circleci/project/shardsrocks/sharock-worker/master.svg)](https://circleci.com/gh/shardsrocks/sharock-worker/tree/master)
 
 Background worker for Sharock.
 
