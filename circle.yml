@@ -1,0 +1,7 @@
+deployment:
+  production:
+    branch: master
+    commands:
+      - |-
+        ssh sharock1.pine.moe -l sharock \
+          bash /home/sharock/project/sharock-deploy/worker/deploy.bash
