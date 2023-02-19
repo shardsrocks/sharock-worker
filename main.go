@@ -1,18 +1,18 @@
 package main
 
 import (
-	"fmt"
-	"github.com/benmanns/goworker"
+        "fmt"
+        "github.com/faustinoaq/goworker"
 )
 
 func init() {
-	goworker.Register("Resolve", resolve)
+        goworker.Register("Resolve", resolve)
 }
 
 func main() {
-	path := getResolverPath()
-	fmt.Println("Resolver Path:", path)
-	if err := goworker.Work(); err != nil {
-		fmt.Println("Error:", err)
-	}
+        path := getResolverPath()
+        fmt.Println("Resolver Path:", path)
+        if err := goworker.Work(); err != nil {
+                fmt.Println("Error:", err)
+        }
 }
